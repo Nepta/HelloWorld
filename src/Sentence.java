@@ -1,12 +1,12 @@
 import java.util.*;
 class Sentence{
-	List<String> wordList;
+	List<Word> wordList;
 
 	Sentence(){
 		this.wordList = new ArrayList<>();
 	}
 
-	Sentence addWord(String word){
+	Sentence addWord(Word word){
 		this.wordList.add(word);
 		return this;
 	}
@@ -15,8 +15,8 @@ class Sentence{
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		int i = 0;
-		for(String word : wordList){
-			sb.append(word);
+		for(Word word : wordList){
+			sb.append(word.toString());
 			if(i < wordList.size()){
 				sb.append(" ");
 			}

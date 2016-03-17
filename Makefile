@@ -1,7 +1,7 @@
 BUILD_DIR=build/
-JFLAGS=-Xlint:all -d ${BUILD_DIR} #-Wall -o build/*.class
+JFLAGS=-Xlint:all -Xdiags:verbose -d ${BUILD_DIR} #-Wall -o build/*.class
 
-all:	class hello.jar
+all:	hello.jar
 
 hello.jar: class Manifest
 	@jar cmf Manifest hello.jar -C build/ .

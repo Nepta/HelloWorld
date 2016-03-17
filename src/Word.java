@@ -1,4 +1,4 @@
-class Word{
+class Word implements HumanString{
 	private String word;
 
 	Word(String word){
@@ -6,7 +6,7 @@ class Word{
 	}
 
 	@Override
-	public String toString(){
+	public String toHumanString(){
 		return word;
 	}
 }

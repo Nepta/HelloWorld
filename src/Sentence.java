@@ -1,5 +1,5 @@
 import java.util.*;
-class Sentence{
+class Sentence implements HumanString{
 	List<Word> wordList;
 
 	Sentence(){
@@ -12,11 +12,11 @@ class Sentence{
 	}
 
 	@Override
-	public String toString(){
+	public String toHumanString(){
 		StringBuilder sb = new StringBuilder();
 		int i = 0;
 		for(Word word : wordList){
-			sb.append(word.toString());
+			sb.append(word.toHumanString());
 			if(i < wordList.size()){
 				sb.append(" ");
 			}

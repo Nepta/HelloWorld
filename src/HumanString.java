@@ -1,0 +1,3 @@
+interface HumanString{
+	String toHumanString();
+}

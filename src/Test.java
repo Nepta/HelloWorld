@@ -3,6 +3,6 @@ class Test{
       Printer<String> p = new StringPrinter();
 		Sentence helloWorld = new Sentence();
 		helloWorld.addWord(new Word("hello")).addWord(new Word("word"));
-		p.println(helloWorld.toString());
+		p.println(helloWorld.toHumanString());
 	}
 }

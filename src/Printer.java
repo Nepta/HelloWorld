@@ -1,5 +1,3 @@
-class Printer{
-   void println(Object o){
-		System.out.println(o);
-	}
+interface Printer<T>{
+   void println(T o);
 }

@@ -1,6 +1,6 @@
 public enum Dictionary{
-	HELLO("hello"),
-	WORLD("world");
+	Hello("hello"),
+	World("world");
 
 	private String word;
 

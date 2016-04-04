@@ -18,7 +18,7 @@ class Sentence implements HumanString{
 		for(Word word : wordList){
 			sb.append(word.toHumanString());
 			if(i < wordList.size()){
-				sb.append(" ");
+				sb.append(Punctuation.Space.getSymbol());
 			}
 			i++;
 		}
